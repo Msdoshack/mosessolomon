@@ -56,7 +56,7 @@ const Footer = () => {
               </p>
 
               <p className="flex items-center gap-1">
-                Linkedin <LinkedInIcon className="w-3 h-3" />:
+                Linkedin <LinkedInIcon className="w-3 h-3" width={4} />:
                 <Link
                   target="_blank"
                   href={"https://www.linkedin.com/in/solomon-moses-4981b4105"}
