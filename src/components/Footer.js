@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Link from "next/link";
-import { LinkedInIcon, TwitterIcon } from "./Icons";
+import { LinkedInIcon } from "./Icons";
 import Image from "next/image";
 
 const Footer = () => {
@@ -56,7 +56,8 @@ const Footer = () => {
               </p>
 
               <p className="flex items-center gap-1">
-                Linkedin <LinkedInIcon className="w-3 h-3" width={4} />:
+                Linkedin :
+                {/* <LinkedInIcon className="w-3 h-3" width={4} />: */}
                 <Link
                   target="_blank"
                   href={"https://www.linkedin.com/in/solomon-moses-4981b4105"}
