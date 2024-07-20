@@ -45,7 +45,7 @@ export default function Home() {
               />
 
               <p className="my-4 text-base font-medium dark:text-light md:text-lg sm:text-sm capitalize text-start w-full">
-                Hi there! I'm
+                Hi there! I am
                 <span className="font-bold"> MOSES SOLOMON </span>
                 Welcome to my
                 <span className="font-extrabold uppercase"> portfolio. </span>
