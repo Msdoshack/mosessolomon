@@ -56,10 +56,10 @@ const about = () => {
                 also resonate with users on a psychological and emotional level.
               </p>
 
-              <p className="font-medium mb-4  dark:text-light/75">
+              <p className="font-medium mb-4 dark:text-light/75">
                 Through continuous learning and staying up-to-date with the
                 latest industry trends, I constantly challenge myself to push
-                the boundaries of what's possible. Whether it's building
+                the boundaries of what is possible. Whether it is building
                 responsive and mobile-friendly designs, architecting scalable
                 applications, or delving into the intricacies of data
                 manipulation, I am always eager to embrace new challenges
