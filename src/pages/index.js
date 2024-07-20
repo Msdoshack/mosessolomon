@@ -66,6 +66,7 @@ export default function Home() {
                 >
                   Chat on whatsapp
                   <Image
+                    alt="whatsapp icon"
                     className="w-4 h-4"
                     src={"/whatsapp-icon.png"}
                     width={10}

@@ -43,6 +43,7 @@ const Footer = () => {
               <p className="flex items-center gap-1">
                 twitter
                 <Image
+                  alt="twitter"
                   src={"/X_logo.png"}
                   width={5}
                   height={5}
@@ -67,6 +68,7 @@ const Footer = () => {
               <p className="flex items-center gap-1">
                 Facebook
                 <Image
+                  alt="facebook logo"
                   src={"/Facebook_Logo.png"}
                   className="w-3 h-3"
                   width={4}

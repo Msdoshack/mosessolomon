@@ -95,6 +95,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <Image
+              alt="fb logo"
               src={"/Facebook_Logo.png"}
               className="w-6 h-6"
               width={4}
@@ -112,6 +113,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <Image
+              alt="x logo"
               src={"/X_logo.png"}
               width={5}
               height={5}
@@ -194,6 +196,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <Image
+                alt="fb logo"
                 src={"/Facebook_Logo.png"}
                 className="w-6 h-6"
                 width={4}
@@ -211,6 +214,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <Image
+                alt="x logo"
                 src={"/X_logo.png"}
                 width={5}
                 height={5}
