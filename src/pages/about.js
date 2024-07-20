@@ -26,7 +26,7 @@ const about = () => {
             Text="pressure makes diamond"
             classname="capitalize mb-16 sm:!mb-8 text-6xl lg:text-4xl md:!text-4xl sm:!text-2xl  xs:!text-2xl"
           />
-          {/*  */}
+
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="sm:text-sm col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-lightblue">
