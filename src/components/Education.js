@@ -35,79 +35,10 @@ const Education = () => {
         ADVANCE DESKTOP PUBLISHING"
           />
           <Details type="Completed various online boot camps and courses focused on web development, including courses on React Js, Next js, React Native, Node.js, Express Js, MySql, Mongo DB and API Development to mention but few" />
-          <Details type="Engaged in self-learning through documentation, online tutorials, and hands-on practice to enhance skills in front-end and back-end development." />
-          <Details type="Actively pursued continuous learning and staying up-to-date with the latest industry trends and best practices in web development" />
+          <Details type="Engaged in self-learning through documentation, online tutorials, and hands-on practice to enhance skills in programming in general." />
           <Details type="Participated in coding challenges, hackathons, and online coding platforms to sharpen problem-solving and coding skills." />
-          <Details type="Regularly attended web development meet ups, workshops, and conferences to network with industry professionals and gain insights into emerging technologies." />
-          <Details type="Actively followed influential tech blogs, podcasts, and YouTube channels to stay informed about the latest trends and advancements in web development." />
+          <Details type="Actively follow influential tech blogs, podcasts, and YouTube channels to stay informed about the latest trends and advancements in the world of tech." />
           <Details type="Continuously worked on personal coding projects, pushing boundaries and exploring new approaches to problem-solving.." />
-          {/* <Details
-            type="Self Learning | Use of official Documentation"
-            // place=""
-            time="2020-2023"
-            info={
-              <div className="flex  flex-col gap-1 font-bold dark:!text-light/90 mt-2">
-                <p>
-                  Tailwind css <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Redux <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Bootsrap <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Vite <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Mongoose <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Node maile <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                  <span></span>
-                </p>
-                <p>
-                  Ant design <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  Firebase <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <p>
-                  data structure and algorithm <br />
-                  <span className="font-light text-primary">
-                    @udemy, @w3schools, @freecodecamp,@youtube
-                  </span>
-                </p>
-                <span className="dark:text-light/75 font-thin">
-                  And more .......
-                </span>
-              </div>
-            }
-          /> */}
         </ul>
       </div>
     </div>
