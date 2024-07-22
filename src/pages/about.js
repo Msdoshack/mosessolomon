@@ -5,20 +5,20 @@ import React from "react";
 import picture from "../../public/images/profile/msdosGlass.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Summary from "@/components/Summary";
+import SkillSet from "@/components/SkillSet";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
-
 import AnimatedNo from "@/components/customComponents/AnimatedNo";
 
 const about = () => {
   return (
     <>
       <Head>
-        <title>Moses Solomon | About page</title>
+        <title>About Moses Solomon</title>
         <meta name="Moses Solomon" content="More About Moses Solomon msdos" />
       </Head>
+
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
@@ -167,7 +167,8 @@ const about = () => {
               </div>
             </div>
           </div>
-          <Summary />
+
+          <SkillSet />
           <Skills />
           <Education />
         </Layout>

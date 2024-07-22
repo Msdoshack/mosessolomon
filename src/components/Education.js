@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import LiIcons from "./LiIcons";
 
 import Details from "./customComponents/EducationDetails";
 

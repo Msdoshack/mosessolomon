@@ -1,15 +1,7 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  TwitterIcon,
-  LinkedInIcon,
-  PinterestIcon,
-  SunIcon,
-  MoonIcon,
-} from "./Icons";
+import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
@@ -85,6 +77,7 @@ const Navbar = () => {
           >
             <GithubIcon />
           </motion.a>
+
           <motion.a
             className="mx-1 w-6 "
             href="https://www.dribble.com/"

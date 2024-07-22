@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>My projects</title>
+        <title>Projects by Moses Solomon</title>
         <meta name="Moses Solomon" content="projects built by moses solomon" />
       </Head>
       <TransitionEffect />
