@@ -7,11 +7,11 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="mt-32 w-full border-t border-dark/20 dark:border-light/10 font-medium !text-base dark:text-lightblue sm:text-sm">
-      <Layout className="!p-20 md:!p-10 !pb-2 !text-base  flex flex-col md:text-xs ">
+      <Layout className="!p-20 md:!p-10 sm:!pb-2 !text-base flex flex-col md:text-xs ">
         <div className="flex flex-row sm:flex-col gap-8 justify-evenly">
           <div className="flex  self-start flex-col">
             <p>Quick links</p>
-            <div className="flex text-sm flex-col sm:flex-row gap-3 mt-3 text-gray-600">
+            <div className="flex text-sm flex-col sm:flex-row gap-3 mt-3 text-gray-600 dark:text-gray-300">
               <Link className="hover:underline underline-offset-4" href={"/"}>
                 Home
               </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className="">
             <p className="">Contact me</p>
-            <div className="flex flex-col gap-2 mt-3 text-gray-600 text-sm">
+            <div className="flex flex-col gap-2 mt-3 text-gray-600 dark:text-gray-300 text-sm">
               <p className="flex items-center gap-2">
                 Mobile:
                 <Link target="_blank" href={"tel:+237063433942"}>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full text-center pt-10 text-sm text-gray-500">
+        <div className="w-full text-center pt-10 text-sm text-gray-500 dark:text-gray-300">
           <span className="dark:text-light/70">All right reserved </span>
           &copy;
           {new Date().getFullYear()}
