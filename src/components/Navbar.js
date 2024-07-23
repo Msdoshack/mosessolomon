@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from "./Icons";
@@ -17,6 +17,26 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
 
   const handleHamburger = () => setIsOpen(!isOpen);
+
+  const popupRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <header className="w-full px-32 py-6 font-medium flex items-center justify-between border-dark/10  dark:border-light/10  border-b-2  lg:px-16 md:px-12 sm:px-8 sticky top-0 z-40 bg-light dark:bg-darkblue">
@@ -123,8 +143,10 @@ const Navbar = () => {
         </nav>
       </div>
 
+      {/* Mobile Navbar */}
       {isOpen && (
         <motion.div
+          ref={popupRef}
           className="hidden min-w-[70vw] sm:flex flex-col items-center justify-between fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-30 dark:bg-light/75 bg-dark/90 backdrop-blur-md rounded-lg py-32"
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
@@ -217,15 +239,21 @@ const Navbar = () => {
 
             <button
               className="ml-10 flex items-center justify-center rounded-full bg-light p-1"
-              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              onClick={() => {
+                setMode(mode === "light" ? "dark" : "light");
+                setIsOpen(false);
+              }}
             >
               {mode === "dark" ? <SunIcon /> : <MoonIcon />}
+              <span className="text-sm">
+                {mode === "dark" ? "light" : "dark"}
+              </span>
             </button>
           </nav>
         </motion.div>
       )}
 
-      <div className="absolute left-[50%] top-[50%]  -translate-y-[50%] -translate-x-[-50%] z-30">
+      <div className=" absolute left-[50%] top-[50%]  -translate-y-[50%] -translate-x-[-50%] z-30">
         <Logo />
       </div>
     </header>
