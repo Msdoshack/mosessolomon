@@ -1,16 +1,22 @@
-import React from "react";
 import Layout from "./Layout";
 import Link from "next/link";
 import { LinkedInIcon } from "./Icons";
 import Image from "next/image";
-
+import arrowdown from "../../public/arrow-down-2.webp";
 const Footer = () => {
   return (
     <footer className="mt-32 w-full border-t border-dark/20 dark:border-light/10 font-medium !text-base dark:text-lightblue sm:text-sm">
       <Layout className="!p-10 sm:!pb-2 !text-base flex flex-col md:text-xs ">
         <div className="flex flex-row sm:flex-col gap-20 sm:gap-10">
           <div className="flex w-1/2 sm:w-full self-start flex-col">
-            <p>Quick links</p>
+            <div className="flex items-center gap-4">
+              <Image
+                src={arrowdown}
+                alt=""
+                className="w-7 sm:w-6 bg-white p-1"
+              />
+              <p>Quick links</p>
+            </div>
             <div className="flex text-sm justify-between  gap-3 mt-3 text-gray-600 dark:text-gray-300">
               <Link className="hover:underline underline-offset-4" href={"/"}>
                 Home

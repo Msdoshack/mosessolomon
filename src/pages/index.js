@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter, Space_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import HireMe from "@/components/HireMe";
 
 import profilePic from "../../public/images/profile/home.png";
 import TransitionEffect from "@/components/TransitionEffect";
+import Techs from "@/components/Techs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +26,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TransitionEffect />
-      <main className="flex mt-16 md:mt-10 sm:mt-6 text-dark min-h-screen">
+      <main className="flex mt-16 md:mt-10 sm:mt-6 text-dark min-h-screen ">
         <Layout className="!pt-0 md:!pt-16 sm:!pt-0 sm:mt-0 items-center justify-center">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+          <div className="flex justify-between w-full lg:flex-col">
+            <div className="w-1/2 h-max  md:w-full sticky sm:static top-20 ">
               <Image
                 src={profilePic}
                 alt="moses solomon"
@@ -45,10 +46,12 @@ export default function Home() {
               />
 
               <p className="my-4 text-base font-medium dark:text-light md:text-lg sm:text-sm capitalize text-start w-full">
-                Hi there! I am
-                <span className="font-bold"> MOSES SOLOMON </span>
-                Welcome to my
-                <span className="font-extrabold uppercase"> portfolio. </span>
+                Hi there! my name is
+                <span className="font-bold"> MOSES SOLOMON </span> a
+                <span className="font-bold capitalize"> fullstack web</span> and
+                cross platform
+                <span className="font-bold capitalize"> mobile app </span>
+                developer
               </p>
               <p className="my-2 text-base font-medium dark:text-light  sm:text-sm">
                 This portfolio is a showcase of my passion, creativity, and
@@ -58,13 +61,14 @@ export default function Home() {
                 to explore my work and witness the seamless fusion of
                 functionality, aesthetics, and innovation.
               </p>
+
               <div className="self-start mt-5 lg:self-center">
                 <Link
                   href="https://wa.me/+2347063433942"
                   target="_blank"
-                  className="flex items-center gap-3  bg-dark dark:bg-[#8899ac] dark:text-dark dark:hover:bg-lightblue text-light p-2.5 px-5 sm:px-3 rounded-lg text-lg sm:text-sm hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark  dark:hover:text-light border-2 ml-4 md:text-base"
+                  className="flex items-center gap-3  bg-dark dark:bg-[#5a97dd] dark:text-dark dark:hover:bg-lightblue text-light py-2 px-3 rounded-lg text-sm hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark  dark:hover:text-light border-2 ml-4 md:text-base"
                 >
-                  Chat on whatsapp
+                  Chat on Whatsapp
                   <Image
                     alt="whatsapp icon"
                     className="w-4 h-4"
@@ -74,6 +78,8 @@ export default function Home() {
                   />
                 </Link>
               </div>
+
+              <Techs />
             </div>
           </div>
         </Layout>

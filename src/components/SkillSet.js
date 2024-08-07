@@ -6,7 +6,7 @@ const SkillSet = () => {
   return (
     <section>
       <h2 className="font-bold text-5xl mt-64 w-full text-center dark:text-lightblue md:text-4xl md:mt-32 sm:mt-20 uppercase mb-16 sm:text-2xl ">
-        skill set
+        Technologies
       </h2>
 
       {/* Desktop */}
