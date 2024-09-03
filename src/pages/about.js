@@ -111,7 +111,7 @@ const about = () => {
             <div className="flex-wrap col-span-2 flex flex-col justify-center  gap-4 md:gap-3  xl:col-span-8 xl:flex-row  md:order-3 ">
               {/* items-end
             xl:items-center */}
-              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 border-black pr-2  ">
+              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
                 <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
                   <AnimatedNo value={100} />%
                 </span>
@@ -120,7 +120,7 @@ const about = () => {
                 </h2>
               </div>
 
-              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 border-black pr-2 ">
+              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black  pr-2 ">
                 <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
                   <AnimatedNo value={100} />%
                 </span>
@@ -129,7 +129,7 @@ const about = () => {
                 </h2>
               </div>
 
-              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 border-black pr-2 ">
+              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2 ">
                 <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
                   <AnimatedNo value={100} />%
                 </span>
@@ -138,7 +138,7 @@ const about = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col items-center justify-center ps-2 xl:items-center border-r-2 border-black pr-2 ">
+              <div className="flex flex-col items-center justify-center ps-2 xl:items-center border-r-2 dark:border-white border-black pr-2 ">
                 <span className="inline-block text-5xl font-bold  dark:text-lightblue md:text-4xl sm:text-lg mx-2">
                   <AnimatedNo value={99} />%
                 </span>
@@ -147,7 +147,7 @@ const about = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 border-black pr-2  ">
+              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
                 <span className="inline-block text-5xl font-bold  dark:text-lightblue md:text-5xl sm:text-lg mx-2">
                   <AnimatedNo value={99} />%
                 </span>
@@ -156,7 +156,7 @@ const about = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col gap-y-2 items-center justify-center xl:items-center  border-r-2 border-black pr-2  ">
+              <div className="flex flex-col gap-y-2 items-center justify-center xl:items-center  border-r-2 dark:border-white border-black pr-2  ">
                 <span className="inline-block text-5xl font-bold   dark:text-lightblue md:text-5xl sm:text-lg lowercase">
                   <AnimatedNo value={3} />
                   yrs +

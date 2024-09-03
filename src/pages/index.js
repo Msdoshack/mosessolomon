@@ -1,35 +1,24 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-
 import HireMe from "@/components/HireMe";
-
 import profilePic from "../../public/images/profile/home.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import Techs from "@/components/Techs";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Moses Solomon</title>
-        <meta
-          name="Moses Solomon"
-          content="info about Moses Solomon, a full stack web and mobile app developer"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home - Moses Solomon</title>
       </Head>
       <TransitionEffect />
       <main className="flex mt-16 md:mt-10 sm:mt-6 text-dark min-h-screen ">
         <Layout className="!pt-0 md:!pt-16 sm:!pt-0 sm:mt-0 items-center justify-center">
           <div className="flex justify-between w-full lg:flex-col">
-            <div className="w-1/2 h-max  md:w-full sticky sm:static top-20 ">
+            <div className="w-1/2 h-max  md:w-full sticky lg:static top-20 ">
               <Image
                 src={profilePic}
                 alt="moses solomon"
@@ -88,5 +77,3 @@ export default function Home() {
     </>
   );
 }
-
-// href="mailto:msdosdarapper@gmail.com"

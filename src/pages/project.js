@@ -16,14 +16,14 @@ const Projects = () => {
     <>
       <Head>
         <title>Projects by Moses Solomon</title>
-        <meta name="Moses Solomon" content="projects built by moses solomon" />
+        <meta name="description" content="projects built by Moses Solomon" />
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
             Text="dream and achieve"
-            classname="!mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
+            classname="!mb-16 text-7xl lg:text-6xl md:!text-5xl sm:!text-4xl"
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
