@@ -9,10 +9,11 @@ const Project = ({ type, img, github, link, title }) => {
       className=" w-full flex items-center flex-col justify-center rounded-3xl  border border-solid border-dark bg-light p-6
       relative xs:p-4"
     >
-      <div className=" absolute top-0 -right-2.5 -z-10 w-[102%] h-[103%] rounded-[2.0rem] bg-dark dark:bg-primary rounded-br-3xl md:right-2 md:w-[101%] xs:h-[102%]xs:rounded-[1.5rem]" />
-      <Link
+      <div className=" absolute top-0 -right-2.5 -z-10 w-[102%] h-[103%] rounded-[2.0rem] bg-dark dark:bg-[#213344] rounded-br-3xl md:right-2 md:w-[101%] xs:h-[102%]xs:rounded-[1.5rem]" />
+      <a
         href={link}
         target="_blank"
+        rel="noopener noreferrer"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <Image
@@ -21,7 +22,7 @@ const Project = ({ type, img, github, link, title }) => {
           priority
           sizes="(max-width:768px ) 100vw, (max-width:1200px) 50vw, 33vw"
         />
-      </Link>
+      </a>
       <div className="w-full flex flex-col items-start justify-between mt-4 ">
         <span className="text-primary font-medium text-xl lg:text-lg md:text-base">
           {type}
@@ -32,12 +33,14 @@ const Project = ({ type, img, github, link, title }) => {
           </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link
+          <a
             href={link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-2 text-lg font-semibold underline underline-offset-4 md:text-base"
           >
             Visit
-          </Link>
+          </a>
           <Link href={github} className="w-8 md:w-6">
             <GithubIcon />
           </Link>

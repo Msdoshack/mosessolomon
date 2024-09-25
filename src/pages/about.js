@@ -28,7 +28,7 @@ const about = () => {
           />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="sm:text-sm col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+            <div className="sm:text-sm col-span-4 flex flex-col items-start justify-start  md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-lightblue">
                 Biography
               </h2>
@@ -83,87 +83,89 @@ const about = () => {
               </p>
             </div>
 
-            <div className="relative col-span-3 h-max rounded-2xl border-solid border-2 border-dark p-8 bg-light dark:bg-[#22303c] xl:col-span-4 md:order-1 md:col-span-8">
-              <motion.div
-                className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] "
-                whileInView={{
-                  backgroundColor: [
-                    "#121212",
-                    "rgba(131,58,180,1)",
-                    "rgba(253,29,29,1)",
-                    "rgba(252,176,69,1)",
-                    "#1da1f2",
-                    "rgba(131,58,180,1)",
-                    "#121212",
-                  ],
-                  transition: { duration: 1, repeat: Infinity },
-                }}
-              />
-              <Image
-                src={picture}
-                alt="about-me"
-                className="w-full h-auto rounded-2xl"
-                priority
-                sizes="(max-width:768px ) 100vw, (max-width:1200px) 50vw, 33vw"
-              />
-            </div>
-
-            <div className="flex-wrap col-span-2 flex flex-col justify-center  gap-4 md:gap-3  xl:col-span-8 xl:flex-row  md:order-3 ">
-              {/* items-end
+            <div className="col-span-4 md:col-span-8 flex flex-col">
+              <div className="relative  h-max rounded-2xl border-solid border-2 border-dark p-8 bg-light dark:bg-[#22303c] max-w-[500px]">
+                <motion.div
+                  className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] "
+                  whileInView={{
+                    backgroundColor: [
+                      "#121212",
+                      "rgba(131,58,180,1)",
+                      "rgba(253,29,29,1)",
+                      "rgba(252,176,69,1)",
+                      "#1da1f2",
+                      "rgba(131,58,180,1)",
+                      "#121212",
+                    ],
+                    transition: { duration: 1, repeat: Infinity },
+                  }}
+                />
+                <Image
+                  src={picture}
+                  alt="about-me"
+                  className="w-full max-w-[500px] h-auto rounded-2xl"
+                  priority
+                  sizes="(max-width:768px ) 100vw, (max-width:1200px) 50vw, 33vw"
+                />
+              </div>
+              {/*  xl:col-span-8 col-span-2 */}
+              <div className="flex-wrap  mt-10 flex  justify-center  gap-4 md:gap-3  md:order-3 ">
+                {/* items-end
             xl:items-center */}
-              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
-                <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
-                  <AnimatedNo value={100} />%
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm ">
-                  commitment
-                </h2>
-              </div>
+                <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
+                  <span className="inline-block text-2xl font-bold dark:text-lightblue lg:text-xl sm:text-lg">
+                    <AnimatedNo value={100} />%
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm sm:text-sm ">
+                    commitment
+                  </h2>
+                </div>
 
-              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black  pr-2 ">
-                <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
-                  <AnimatedNo value={100} />%
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm ">
-                  communication
-                </h2>
-              </div>
+                <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black  pr-2 ">
+                  <span className="inline-block text-2xl font-bold dark:text-lightblue lg:text-xl sm:text-lg">
+                    <AnimatedNo value={100} />%
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm sm:text-sm ">
+                    communication
+                  </h2>
+                </div>
 
-              <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2 ">
-                <span className="inline-block text-5xl font-bold dark:text-lightblue md:text-4xl sm:text-lg">
-                  <AnimatedNo value={100} />%
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm ">
-                  innovation
-                </h2>
-              </div>
+                <div className="flex  flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2 ">
+                  <span className="inline-block text-2xl font-bold dark:text-lightblue lg:text-xl sm:text-lg">
+                    <AnimatedNo value={100} />%
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm sm:text-sm ">
+                    innovation
+                  </h2>
+                </div>
 
-              <div className="flex flex-col items-center justify-center ps-2 xl:items-center border-r-2 dark:border-white border-black pr-2 ">
-                <span className="inline-block text-5xl font-bold  dark:text-lightblue md:text-4xl sm:text-lg mx-2">
-                  <AnimatedNo value={99} />%
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm ">
-                  Learning
-                </h2>
-              </div>
+                <div className="flex flex-col items-center justify-center ps-2 xl:items-center border-r-2 dark:border-white border-black pr-2 ">
+                  <span className="inline-block text-2xl font-bold  dark:text-lightblue lg:text-xl sm:text-lg mx-2">
+                    <AnimatedNo value={99} />%
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm sm:text-sm ">
+                    Learning
+                  </h2>
+                </div>
 
-              <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
-                <span className="inline-block text-5xl font-bold  dark:text-lightblue md:text-5xl sm:text-lg mx-2">
-                  <AnimatedNo value={99} />%
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm">
-                  creativity
-                </h2>
-              </div>
+                <div className="flex flex-col items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
+                  <span className="inline-block text-2xl font-bold  dark:text-lightblue lg:text-xl sm:text-lg mx-2">
+                    <AnimatedNo value={99} />%
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm sm:text-sm">
+                    creativity
+                  </h2>
+                </div>
 
-              <div className="flex flex-col gap-y-2 items-center justify-center xl:items-center  border-r-2 dark:border-white border-black pr-2  ">
-                <span className="inline-block text-5xl font-bold   dark:text-lightblue md:text-5xl sm:text-lg lowercase">
-                  <AnimatedNo value={3} />
-                  yrs +
-                </span>
-                <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center md:text-lg sm:text-sm xs:pr-2">
-                  experience
-                </h2>
+                <div className="flex flex-col gap-y-2 items-center justify-center xl:items-center border-r-2 dark:border-white border-black pr-2  ">
+                  <span className="inline-block text-2xl font-bold   dark:text-lightblue lg:text-xl sm:text-lg lowercase">
+                    <AnimatedNo value={3} />
+                    yrs +
+                  </span>
+                  <h2 className="text-xl capitalize text-dark/75 font-medium dark:text-light/75 xl:text-center lg:text-sm  xs:pr-2">
+                    experience
+                  </h2>
+                </div>
               </div>
             </div>
           </div>

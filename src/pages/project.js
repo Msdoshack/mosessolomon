@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import React from "react";
 import project1 from "../../public/images/projects/mysnippet.jpg";
-import project2 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project2 from "../../public/images/projects/portfoliocomical.jpg";
 import project3 from "../../public/images/projects/fashion-studio-website.jpg";
 import project4 from "../../public/images/projects/portfolio-cover-image.jpg";
 import project5 from "../../public/images/projects/devdreaming.jpg";
@@ -23,24 +23,24 @@ const Projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             Text="dream to achieve"
-            classname="!mb-16 text-7xl lg:text-6xl md:!text-5xl sm:!text-4xl"
+            classname="!mb-16 text-7xl lg:text-6xl md:!text-5xl sm:!text-4xl text-white"
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="MySnippets"
-                summary="A minimalistic web application for safely storing your reusable snippets. It was built using standard Go libraries, plain JavaScript, HTML, and CSS, with PostgreSQL for the database."
-                link="https://mysnippets.onrender.com"
-                img={project1}
+                title="Video sharing platform"
+                summary="A feature-rich comedic video-sharing platform, built with React, Styled Components, Redux Toolkit, Nest.js, MongoDB, and Firebase. The app is mobile-responsive with both light and dark mode support."
+                link="https://komicals.onrender.com"
+                img={project2}
                 github="#"
                 type="featured project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                link="#"
+                title="Video sharing platform"
+                link="https://komicals.onrender.com"
                 img={project2}
                 github="#"
                 type="featured project"
@@ -55,18 +55,18 @@ const Projects = () => {
                 type="featured project"
               />
             </div>
+
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="#"
-                img={project2}
+                title="MySnippets"
+                summary="A minimalistic web application for safely storing your reusable snippets. It was built using standard Go libraries, plain JavaScript, HTML, and CSS, with PostgreSQL for the database."
+                link="https://mysnippets.onrender.com"
+                img={project1}
                 github="#"
                 type="featured project"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"

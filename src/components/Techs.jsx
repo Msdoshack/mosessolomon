@@ -15,7 +15,7 @@ import nextjs from "../../public/images/tech/nextjs.png";
 import bootstrap from "../../public/images/tech/bootsrap.png";
 import tailwind from "../../public/images/tech/tailwind-logo.png";
 import redux from "../../public/images/tech/redux.png";
-import firebase from "../../public/images/tech/firebase-logo.jpg";
+import firebase from "../../public/images/tech/firebase.png";
 import docker from "../../public/images/tech/docker-logo.png";
 import git from "../../public/images/tech/git-logo.jpg";
 import Image from "next/image";
@@ -52,7 +52,7 @@ const Techs = () => {
         {images.map((img, i) => (
           <Image
             src={img}
-            className="w-20 sm:w-16  object-contain rounded-md"
+            className="w-20 sm:w-16  object-cover rounded-md"
             alt=""
             key={i}
           />

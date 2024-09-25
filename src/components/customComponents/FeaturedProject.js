@@ -24,18 +24,21 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         }}
       />
 
-      <Link
-        href={link}
-        target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
-      >
-        <Image
-          src={img}
-          priority
-          alt="featured project"
-          sizes="(max-width:768px ) 100vw, (max-width:1200px) 50vw, 50vw"
-        />
-      </Link>
+      <div>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        >
+          <Image
+            src={img}
+            priority
+            alt="featured project"
+            sizes="(max-width:768px ) 100vw, (max-width:1200px) 50vw, 50vw"
+          />
+        </a>
+      </div>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 xs:text-base ">
         <span className="text-primary font-medium text-xl">{type}</span>
         <Link href={link} target="_blank">
@@ -48,12 +51,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link href={github} className="w-10">
             <GithubIcon />
           </Link>
-          <Link
-            href={link}
-            className="ml-4 bg-dark text-light rounded-lg p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
-          >
-            Visit Project
-          </Link>
+          <div className="ml-4 bg-dark text-light rounded-lg p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              Visit Project
+            </a>
+          </div>
         </div>
       </div>
     </article>
