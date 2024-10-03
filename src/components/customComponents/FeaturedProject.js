@@ -42,7 +42,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 xs:text-base ">
         <span className="text-primary font-medium text-xl">{type}</span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-4xl font-bold hover:underline underline-offset-2 sm:text-sm">
+          <h2 className="my-2 w-full text-left text-4xl font-bold hover:underline underline-offset-2 sm:text-xl">
             {title}
           </h2>
         </Link>

@@ -51,7 +51,7 @@ export default function Home() {
                 functionality, aesthetics, and innovation.
               </p>
 
-              <div className="self-start mt-5 lg:self-center">
+              {/* <div className="self-start mt-5 lg:self-center">
                 <Link
                   href="https://wa.me/+2347063433942"
                   target="_blank"
@@ -66,7 +66,7 @@ export default function Home() {
                     height={10}
                   />
                 </Link>
-              </div>
+              </div> */}
 
               <Techs />
             </div>

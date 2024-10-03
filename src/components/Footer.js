@@ -40,10 +40,18 @@ const Footer = () => {
             <p className="">Contact me</p>
             <div className="flex flex-col gap-2 mt-3 text-gray-600 dark:text-gray-300 text-sm">
               <p className="flex items-center gap-2">
-                Mobile:
-                <Link target="_blank" href={"tel:+237063433942"}>
-                  +2347063433942
-                </Link>
+                <Image
+                  alt="email"
+                  src={"/email.png"}
+                  width={5}
+                  height={5}
+                  className={"w-4 h-4 bg-black"}
+                />
+                :
+                <span target="_blank" href={"tel:+237063433942"}>
+                  msdosdarapper@gmail.com, <br />
+                  mosessolomonms@outlook.com
+                </span>
               </p>
 
               <p className="flex items-center gap-1">
@@ -52,7 +60,7 @@ const Footer = () => {
                   src={"/X_logo.png"}
                   width={5}
                   height={5}
-                  className={"w-3 h-3 bg-black"}
+                  className={"w-4 h-4 bg-black"}
                 />
                 :
                 <Link target="_blank" href={"https://x.com/Msdos_rapper"}>
@@ -61,7 +69,7 @@ const Footer = () => {
               </p>
 
               <p className="flex items-center gap-1">
-                <LinkedInIcon className="!w-3 !h-3" />:
+                <LinkedInIcon className="!w-4 !h-4" />:
                 <Link
                   target="_blank"
                   href={"https://www.linkedin.com/in/solomon-moses-4981b4105"}
@@ -74,7 +82,7 @@ const Footer = () => {
                 <Image
                   alt="facebook logo"
                   src={"/Facebook_Logo.png"}
-                  className="w-3 h-3"
+                  className="w-4 h-4"
                   width={4}
                   height={4}
                 />

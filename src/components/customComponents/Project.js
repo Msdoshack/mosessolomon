@@ -28,7 +28,7 @@ const Project = ({ type, img, github, link, title }) => {
           {type}
         </span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-3xl font-bold hover:underline underline-offset-4 lg:text-[2xl]">
+          <h2 className="my-2 w-full text-left text-3xl sm:text-xl font-bold hover:underline underline-offset-4 lg:text-[2xl]">
             {title}
           </h2>
         </Link>

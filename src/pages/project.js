@@ -2,8 +2,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import React from "react";
-import project1 from "../../public/images/projects/mysnippet.jpg";
-import project2 from "../../public/images/projects/portfoliocomical.jpg";
+import mysnippet from "../../public/images/projects/mysnippet.jpg";
+import comical from "../../public/images/projects/portfoliocomical.jpg";
+import fortuna from "../../public/images/projects/fortunacard.jpg";
 import project3 from "../../public/images/projects/fashion-studio-website.jpg";
 import project4 from "../../public/images/projects/portfolio-cover-image.jpg";
 import project5 from "../../public/images/projects/devdreaming.jpg";
@@ -32,16 +33,16 @@ const Projects = () => {
                 title="Video sharing platform"
                 summary="A feature-rich comedic video-sharing platform, built with React, Styled Components, Redux Toolkit, Nest.js, MongoDB, and Firebase. The app is mobile-responsive with both light and dark mode support."
                 link="https://komicals.onrender.com"
-                img={project2}
+                img={comical}
                 github="#"
                 type="featured project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Video sharing platform"
-                link="https://komicals.onrender.com"
-                img={project2}
+                title="A football prediction website"
+                link="https://fortunatips.vercel.app"
+                img={fortuna}
                 github="#"
                 type="featured project"
               />
@@ -61,7 +62,7 @@ const Projects = () => {
                 title="MySnippets"
                 summary="A minimalistic web application for safely storing your reusable snippets. It was built using standard Go libraries, plain JavaScript, HTML, and CSS, with PostgreSQL for the database."
                 link="https://mysnippets.onrender.com"
-                img={project1}
+                img={mysnippet}
                 github="#"
                 type="featured project"
               />
