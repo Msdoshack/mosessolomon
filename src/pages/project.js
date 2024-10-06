@@ -5,9 +5,7 @@ import React from "react";
 import mysnippet from "../../public/images/projects/mysnippet.jpg";
 import comical from "../../public/images/projects/portfoliocomical.jpg";
 import fortuna from "../../public/images/projects/fortunacard.jpg";
-import project3 from "../../public/images/projects/fashion-studio-website.jpg";
-import project4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import project5 from "../../public/images/projects/devdreaming.jpg";
+import thriftbysugar from "../../public/images/projects/thriftbysugarcard.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 import FeaturedProject from "@/components/customComponents/FeaturedProject";
 import Project from "@/components/customComponents/Project";
@@ -30,7 +28,7 @@ const Projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Video sharing platform"
+                title="Comicals"
                 summary="A feature-rich comedic video-sharing platform, built with React, Styled Components, Redux Toolkit, Nest.js, MongoDB, and Firebase. The app is mobile-responsive with both light and dark mode support."
                 link="https://komicals.onrender.com"
                 img={comical}
@@ -38,20 +36,13 @@ const Projects = () => {
                 type="featured project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="A football prediction website"
-                link="https://fortunatips.vercel.app"
-                img={fortuna}
-                github="#"
-                type="featured project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                link="#"
-                img={project3}
+
+            <div className="col-span-12">
+              <FeaturedProject
+                summary="Thrift by Sugar is a product inventory website designed to meet the business needs of retail traders who require an online platform to display the latest available products, discounts, and prices to customers, while also fostering strong customer relationships. Note: Although it has some elements of an e-commerce site, it is not a full e-commerce platform"
+                title="ThriftBySugar"
+                link="https://thriftbysugar.onrender.com"
+                img={thriftbysugar}
                 github="#"
                 type="featured project"
               />
@@ -70,22 +61,33 @@ const Projects = () => {
 
             <div className="col-span-6 sm:col-span-12">
               <Project
+                title="A football prediction website"
+                link="https://fortunatips.vercel.app"
+                img={fortuna}
+                github="#"
+                type="project"
+              />
+            </div>
+            {/* 
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title="Crypto Screener Application"
                 link="#"
                 img={project4}
                 github="#"
-                type="featured project"
+                type="project"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
                 link="#"
                 img={project5}
                 github="#"
-                type="featured project"
+                type="project"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
